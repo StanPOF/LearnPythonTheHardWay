@@ -1,0 +1,35 @@
+POF:hard_way POF$ python                                             # 运行python
+Python 2.7.10 (default, Jul 14 2015, 19:46:27) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ex25                                                      # 先将脚本导入python
+>>> sentence = "All things comes to those who wait."
+>>> words = ex25.break_words(sentence)                               # 定义变量
+>>> words
+['All', 'things', 'comes', 'to', 'those', 'who', 'wait.']
+>>> sorted_words = ex25.sort_words(words)                            # 调用函数并赋值返回值给新的变量
+>>> sorted_words                                                     # 查看新的变量
+['All', 'comes', 'things', 'those', 'to', 'wait.', 'who']
+>>> ex25.print_first_word(words)
+All
+>>> ex25.print_last_word(words)
+wait.
+>>> words
+['things', 'comes', 'to', 'those', 'who']
+>>> ex25.print_first_word(sorted_words)
+All
+>>> ex25.print_last_word(sorted_words)
+who
+>>> sorted_words
+['comes', 'things', 'those', 'to', 'wait.']
+>>> sorted_words = ex25.sort_sentence(sentence)
+>>> sorted_words
+['All', 'comes', 'things', 'those', 'to', 'wait.', 'who']
+>>> ex25.print_first_and_last(sentence)
+All
+wait.
+>>> ex25.print_first_and_last_sorted(sentence)
+All
+who
+>>> 
+>>> ^D
